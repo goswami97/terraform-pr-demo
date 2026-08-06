@@ -37,3 +37,8 @@ resource "aws_iam_user" "this" {
     Team        = "DevOps"
   }
 }
+
+resource "aws_iam_group" "this" {
+  name = "developers"
+  
+}
