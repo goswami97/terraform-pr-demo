@@ -30,3 +30,10 @@ resource "aws_s3_bucket" "my_s3_bucket" {
   }
 }
 
+resource "aws_iam_user" "this" {
+  name = "temp-user"
+
+  tags = {
+    Team        = "DevOps"
+  }
+}
